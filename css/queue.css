@@ -1,0 +1,17 @@
+.qtable{
+    border-spacing: 15px;
+}
+
+.card-bg{
+    padding: 15px;
+}
+
+.navigate{
+    display: flex;
+    flex-direction: row;
+
+}
+
+.spacer{
+    width: 100%;
+}

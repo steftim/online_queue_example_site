@@ -1,0 +1,261 @@
+* {
+    box-sizing: border-box;
+    list-style: none;
+}
+
+body,
+html {
+    /*background-color: #141414;*/
+    font-family: Roboto;
+    color: white;
+    background-image: url('../res/background.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    border: 1px;
+}
+
+@media (min-width: 800px){
+    body,html{
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.fg {
+    background-color: #2c2c2e;
+}
+
+header {
+    padding: 20px 2% 0 2%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex: 0 0 48px;
+    width: 100%;
+}
+
+div.header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    /* height: 48px; */
+}
+
+div.header-left {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+div.header-right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 20px;
+}
+
+p.header,
+a.header {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    text-decoration: none;
+    color: white;
+}
+
+i.header {
+    background-image: url('../res/ico.svg');
+    width: 40px;
+    height: 40px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+main {
+    flex-grow: 1;
+    padding-top: 15px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+}
+
+.card-bg {
+    opacity: 0.95;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 50px;
+}
+
+div.card-bg-left {
+    flex-grow: 1;
+    margin: 18% auto auto auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 60px 0 0;
+}
+
+p.card-bg-left {
+    /* padding: 200px 70px 0 70px; */
+    margin-left: 1rem;
+    margin-right: 1px;
+    font-size: 28px;
+    cursor: default;
+}
+
+div.card-bg-right {
+    flex-grow: 1;
+    /* height: 100%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding: 0 70px 0 50px; */
+}
+
+.card-reg {
+    margin: auto;
+    min-height: 550px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form.reg-form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+select,input.reg-form {
+    font-size: 18px;
+    line-height: 24px;
+    padding: 0 10px;
+    margin: 5px 0 10px 0;
+    border-radius: 3px;
+    background-color: white;
+    border: 1px solid #ffffff;
+    width: 340px;
+    height: 40px;
+}
+
+label.reg-form {
+    font-size: 16px;
+    line-height: 16px;
+}
+
+button.reg-form {
+    border: none;
+    background-color: hsl(138, 61%, 48%);
+    color: white;
+    padding: 9px 24px;
+    margin-top: 40px;
+    width: 190px;
+    height: 40px;
+    border-radius: 4px;
+    font-size: 18px;
+
+}
+
+div.card-bg-right {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 70px 0 50px;
+}
+
+.tickets-amount {
+    border: 1px solid #ffffff;
+    border-radius: 4px;
+    height: 40px;
+    width: 65px;
+    font-size: 18px;
+    line-height: 24px;
+    padding: 0 10px;
+    margin: 5px 0 10px 0;
+}
+
+.footer {
+    flex: 0 0 20px;
+    padding: 20px 0;
+    text-align: center;
+}
+
+div.submit {
+    height: 10vh;
+    width: 10vw;
+    margin: auto;
+}
+
+@media (max-width: 830px) {
+    .card-bg {
+        opacity: 0.95;
+        border-radius: 4px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        padding: 0 10px 0 10px;
+    }
+
+    div.card-bg-left {
+        flex-grow: 1;
+        margin: 18% auto auto auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0 0 0 0;
+    }
+
+    p.card-bg-left {
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 28px;
+        cursor: default;
+    }
+    div.card-bg-right {
+        flex-grow: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+
+.column{
+    display: flex;
+    flex-direction: column;
+}
+
+@media (max-width: 500px) {
+    main{
+        margin: 0;
+    }
+    div.card-bg-right {
+        flex-grow: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 30px 0 30px;
+    }
+
+    .card-bg {
+        padding: 0 3% 0 3%;
+        width: 95%;
+    }
+
+    select,input.reg-form {
+        width: 100%;
+    }
+
+}
